@@ -5,8 +5,8 @@
   "source": "index.html",
   "scripts": {
     "start": "parcel serve src/index.html --public-url / --dist-dir dist",
-    "prebuild" : "npx rimraf build",
-    "build" : "parcel build --public-url / src/index.html --dist-dir build ",
+    "prebuild": "npx rimraf build",
+    "build": "parcel build --public-url / src/index.html --dist-dir build ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "overrides": {
@@ -16,7 +16,9 @@
   "author": "Mwape Chipyoka",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.11.0",
     "@parcel/transformer-sass": "^2.11.0",
+    "@parcel/transformer-webmanifest": "^2.11.0",
     "parcel": "^2.11.0"
   },
   "dependencies": {
