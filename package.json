@@ -2,9 +2,11 @@
   "name": "personal_portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "source": "index.html",
   "scripts": {
     "start": "parcel serve src/index.html --public-url / --dist-dir dist",
+    "prebuild" : "npx rimraf build",
+    "build" : "parcel build --public-url / src/index.html --dist-dir build ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "overrides": {
