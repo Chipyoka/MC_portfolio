@@ -84,6 +84,26 @@ section.hero{
     padding: .3em;
     //box-shadow: $shadow;
 }
+
+aside.hero-1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 8em;
+    background-color: #007bff;
+    overflow: hidden;
+    height: auto;
+    max-width: 20rem;
+    object-fit: cover;
+}
+.hero-1 img{
+   max-width: 100%;
+   height: auto;
+}
+
+
+
+
 header{
     border-bottom: 20px solid #fff;
 }
@@ -276,19 +296,4 @@ header{
        max-width: 100%;
        height: auto;
     }
-}
-aside.hero-1{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-left: 8em;
-    background-color: #007bff;
-    overflow: hidden;
-    height: auto;
-    max-width: 20rem;
-    object-fit: cover;
-}
-.hero-1 img{
-   max-width: 100%;
-   height: auto;
 }
