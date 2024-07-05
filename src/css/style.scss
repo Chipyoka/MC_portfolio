@@ -27,6 +27,13 @@ section{
     align-items: center;
     justify-content: center;
 }
+a.chat{
+    padding : .25em 4em !important;
+}
+.logo{
+    font-weight: 800;
+    letter-spacing: -0.85em;
+}
 //Home page
 .brands{
     display : flex;
@@ -44,17 +51,17 @@ section{
 }
 .hero-1{
     border-radius: 50%;
+    // max-width: 150px;
+
+
     border: 5px solid $custom-secondary-color;
     color: $custom-secondary-color;
     //overflow: hidden;
     margin: .5em;
+    // height: 200px;
     
 }
 
-.hero-1 img{
-    width: 420px;
-    
-}
 section.hero{
     margin-top: 2.5em;
 }
@@ -171,6 +178,9 @@ header{
     color:black;
     font-size: $font-size-base * .75;
  }
+ .sm-show{
+    display: none;
+ }
 //portfolio
 
 
@@ -178,3 +188,65 @@ header{
 
 
 //media queries
+@media screen and (max-width: 767px){
+//    body{
+//     max-width: 480px;
+//     overflow: hidden;
+//    }
+header{
+    padding: 0;
+    margin: 0;
+}
+.sm-show{
+    display: block;
+}
+.sm-hide{
+    display: none;
+}
+    p{
+        font-size: .85rem;
+    }
+    section.hero{
+        margin: 1em 0;
+        padding: 0;
+    }
+    div.hero{
+        margin: 0;
+        padding: 0;
+        justify-content:flex-start;
+    }
+    
+    aside.welcome-txt{
+        max-width: 100%;
+        // margin: .5em 1em;
+        padding: .5m 1em;
+        // border: 2px green solid;
+        flex-direction: column-reverse !important;
+    }
+
+    .welcome-txt h1{
+        font-size: 1.65rem;
+        margin: .25em 0;
+        text-align: center;
+    }
+    .welcome-txt p{
+        font-size: .85rem;
+        text-align: center;
+        padding: .5em .5em
+    }
+    aside.hero-1{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-left: 2em;
+        background-color: #007bff;
+        overflow: hidden;
+        height: auto;
+        max-width: 18rem;
+        object-fit: cover;
+    }
+    .hero-1 img{
+       max-width: 100%;
+       height: auto;
+    }
+}
