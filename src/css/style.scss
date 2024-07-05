@@ -1,0 +1,180 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+// variables
+$custom-primary-color : rgb(173, 173, 173);
+$custom-secondary-color : #007bff;
+$shadow : 5px 5px 5px rgba(0, 0, 0, 0.12);
+$black : rgb(24, 23, 23);
+$white :#f1efef;
+$font-size-base:  1rem;
+$font-size-sm: $font-size-base * .85;
+
+//Global Rules
+body{
+    background-color: $white;
+    font-family: Arial, sans-serif;
+}
+section{
+    margin-top:3em;
+    margin-bottom:3em;
+}
+.comp{
+    background-color:#fff ;
+}
+.container-custom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+//Home page
+.brands{
+    display : flex;
+    float: left;
+    justify-content: center;
+    align-items: center; 
+    margin: .3em 3em;
+}
+.clientele, hr{
+    margin-left: 4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    color: rgb(161, 161, 161);
+    font-weight: 700;
+}
+.hero-1{
+    border-radius: 50%;
+    border: 5px solid $custom-secondary-color;
+    color: $custom-secondary-color;
+    //overflow: hidden;
+    margin: .5em;
+    
+}
+
+.hero-1 img{
+    width: 420px;
+    
+}
+section.hero{
+    margin-top: 2.5em;
+}
+
+.welcome-txt h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.welcome-txt h4{
+    font-size: 1rem;
+}
+.welcome-txt p{
+    font-size: 1.5rem;
+}
+.welcome-txt h4 span.des{
+    color: $custom-secondary-color;
+    font-weight: 600;
+    border: thin solid $custom-secondary-color;
+    margin-right: .5em;
+    padding: .3em;
+    //box-shadow: $shadow;
+}
+header{
+    border-bottom: 20px solid #fff;
+}
+.navbar{
+    border-bottom: 2px solid $custom-secondary-color;
+}
+
+.dropdown-menu{
+    border: none;
+ }
+
+
+.des{
+    color: $custom-secondary-color;
+    font-weight: 600;
+    padding: .3em;
+    box-shadow: $shadow;
+}
+.des-1{
+    font-size: 1.9rem;
+    margin: .5em;
+}
+
+.exp{
+    background-color: $white;
+    margin-bottom: 0em;
+    height: 10px;
+}
+
+.card{
+   margin-bottom: 1.5em;
+   overflow: hidden;
+   border: none;
+}
+
+.card-big{
+    margin: 1em;
+    overflow: hidden;
+    border: none;
+    background-color: $white;
+ }
+
+.card a img {
+    width: 100%;
+}
+
+.card-header{
+    border: none;
+ }
+ .card-title{
+    font-weight: 700;
+    font-size: 1.6em;
+ }
+.recent{
+    margin-top: 1em;
+}
+
+//footer styling
+.by {
+    color: $black;
+    font-size: 0.8em;
+}
+.social img:hover{
+    transition: transform .8s ease;
+    transform: scale(1.05);
+}
+.social img{
+    margin: 0 0.5em;
+}
+ footer{
+    padding-top: 3em;
+    padding-bottom: 2em;
+    margin-bottom: 0em;
+    color: black;
+    background-color: darkgrey ;
+ }
+ .footer-link ul li{
+    list-style: none;
+ }
+ .footer-link ul li a:hover{
+    text-decoration: underline;
+ }
+ .footer-link ul li a:visited{
+    color: $custom-secondary-color;
+ }
+ .footer-link ul li a{
+    text-decoration: none;
+    color:$body-color;
+    font-size: $font-size-base * .85;
+ }
+ .copyright{
+    color:black;
+    font-size: $font-size-base * .75;
+ }
+//portfolio
+
+
+//About
+
+
+//media queries
