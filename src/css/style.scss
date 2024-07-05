@@ -189,7 +189,13 @@ header{
     margin: 0 .5em;
     padding: 0 .5em;
 }
-
+.drive{
+    font-size: .85rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 0 .5em;
+}
 .git:hover, .linked:hover{
     color: #007bff;
 }
@@ -199,9 +205,8 @@ header{
 
 .lookup{
     font-size: .85em;
-    width: 50%;
     font-weight: 500;
-    padding: .5em 4em;
+  
 }
 
 //media queries
